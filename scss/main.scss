@@ -1,0 +1,39 @@
+@font-face {
+  font-family: 'Gilroy-Bold';
+  src: url('../fonts/Gilroy-Bold.eot');
+  src: url('../fonts/Gilroy-Bold.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/Gilroy-Bold.woff2') format('woff2'),
+  url('../fonts/Gilroy-Bold.woff') format('woff'),
+  url('../fonts/Gilroy-Bold.ttf')  format('truetype'),
+  url('../fonts/Gilroy-Bold.svg#Gilroy-Bold') format('svg');
+}
+
+@font-face {
+  font-family: 'Gilroy-Medium';
+  src: url('../fonts/Gilroy-Medium.eot');
+  src: url('../fonts/Gilroy-Medium.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/Gilroy-Medium.woff2') format('woff2'),
+  url('../fonts/Gilroy-Medium.woff') format('woff'),
+  url('../fonts/Gilroy-Medium.ttf')  format('truetype'),
+  url('../fonts/Gilroy-Medium.svg#Gilroy-Medium') format('svg');
+}
+
+//utils styles
+@import "./utils/variables";
+@import "./utils/mixins";
+@import "./utils/visuall-hidden";
+
+//base styles
+
+@import "./base/common";
+@import "./base/button";
+@import "./base/container";
+
+//components
+
+@import "components/header";
+@import "components/hero";
+@import "components/about";
+@import "components/skills";
+@import "components/portfolio";
+@import "components/contacts";

@@ -1,0 +1,52 @@
+.contacts__title{
+  font-family: $support-font;
+  @include fonts(normal, 700, 34px, 1.2);
+  margin-bottom: 28px;
+  text-align: center;
+}
+
+.contacts__text{
+  @include fonts(normal, 500, 18px, 1.2);
+  max-width: 275px;
+  text-align: center;
+  padding-bottom: 40px;
+  margin: 0 auto;
+}
+
+.text_btn{
+  @include fonts(normal, 500, 18px, 1.2);
+  color: #ffffff;
+  padding: 12px 97px;
+}
+
+.contacts__btn{
+  display: block;
+  margin: 0 auto;
+  border: none;
+}
+
+.contacts__list{
+  display: flex;
+  justify-content: center;
+  margin-top: 48px;
+  margin-bottom: 48px;
+}
+
+.contacts__item:not(:last-child){
+  margin-right: 50px;
+}
+
+.contacts__text-color{
+  color: #828282;
+}
+
+.span{
+  width: 100%;
+}
+
+.contacts__socials{
+  @include fonts(normal, 500, 18px, 1.2);
+  text-align: center;
+  margin: 0 auto;
+  color: #828282;
+}

@@ -1,0 +1,23 @@
+.hero{
+  padding-top: 62px;
+}
+
+.hero__title{
+  font-family: $support-font;
+
+  @include fonts(normal, 700, 48px, 1.2);
+  max-width: 124px;
+
+  margin-bottom: 23px;
+}
+
+.hero__text{
+  @include fonts(normal, 500, 18px, 1.2);
+}
+.text__wrapper{
+  margin-bottom: 36px;
+}
+
+.hero__img{
+  margin: 0 auto;
+}

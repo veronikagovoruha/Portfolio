@@ -1,0 +1,42 @@
+body{
+  font-family: $main-font;
+  color: #070707;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+button{
+  cursor: pointer;
+  padding: 0;
+}
+
+img{
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+ul{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.section{
+  padding-top: 84px;
+  padding-bottom: 84px;
+}
+
+.link,
+address{
+  text-decoration: none;
+  color: inherit;
+}
