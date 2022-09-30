@@ -1,5 +1,6 @@
 .hero{
   padding-top: 62px;
+  padding-bottom: 84px;
 }
 
 .hero__title{
@@ -18,6 +19,41 @@
   margin-bottom: 36px;
 }
 
+.hero__list{
+  display: none;
+}
+
 .hero__img{
   margin: 0 auto;
+}
+
+@media (min-width: 768px){
+  .hero{
+    padding-top: 40px;
+    padding-bottom: 105px;
+  }
+  .hero__wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+  }
+
+  .hero__title{
+    margin-bottom: 0;
+  }
+
+  .hero__list{
+    display: flex;
+    justify-content: end;
+    transform: rotate(90deg);
+  }
+
+  .hero__item{
+    @include fonts(normal, 700, 16px, 1.2);
+  }
+
+  .hero__img{
+    margin: 0;
+  }
 }

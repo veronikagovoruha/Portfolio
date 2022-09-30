@@ -18,3 +18,13 @@
 .skills__img{
   margin: 0 auto;
 }
+
+@media (min-width: 768px){
+  .skills__list{
+    display: flex;
+  }
+
+  .skills__item:not(:last-child){
+    padding-right: 90px;
+  }
+}

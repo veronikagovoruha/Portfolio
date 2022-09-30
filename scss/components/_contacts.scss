@@ -50,3 +50,9 @@
   margin: 0 auto;
   color: #828282;
 }
+
+@media (min-width: 768px){
+  .text_btn{
+    padding: 12px 30px;
+  }
+}

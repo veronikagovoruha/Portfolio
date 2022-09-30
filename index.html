@@ -11,8 +11,7 @@
 </head>
 <body>
     <header class="header">
-        <div class="container">
-            <div class="header__wrapper">
+        <div class="header__container container">
                 <div class="header__body">
                     <div class="header__burger">
                         <span></span>
@@ -25,47 +24,34 @@
                             <li class="header__item"><a class="header__link" href="">Portfolio</a></li>
                             <li class="header__item"><a class="header__link" href="">Contacts</a></li>
                         </ul>
+                        <ul class="lang__wrapper">
+                            <li class="header__lang"><a class="hero__link link" href="">RU | </a></li>
+                            <li class="header__lang"><a class="hero__link link" href="">ENG</a></li>
+                        </ul>
                     </nav>
                 </div>
-            </div>
-
         </div>
-<!--        <div class="header__container container">-->
-<!--                <nav class="nav">-->
-<!--                    <ul class="nav__list ">-->
-<!--                        <li class="nav__item">-->
-<!--                            <a class="nav__link" href="">Home</a>-->
-<!--                        </li>-->
-<!--                        <li class="nav__item">-->
-<!--                            <a class="nav__link" href="">About me</a>-->
-<!--                        </li>-->
-<!--                        <li class="nav__item">-->
-<!--                            <a class="nav__link" href="">Skills</a>-->
-<!--                        </li>-->
-<!--                        <li class="nav__item">-->
-<!--                            <a class="nav__link" href="">Portfolio</a>-->
-<!--                        </li>-->
-<!--                        <li class="nav__item">-->
-<!--                            <a class="nav__link" href="">Contacts</a>-->
-<!--                        </li>-->
-<!--                    </ul>-->
-<!--                </nav>-->
-<!--        </div>-->
     </header>
 
     <main>
         <section class="hero">
             <div class="hero__container container">
-                <h1 class="hero__title">Denis Novik</h1>
-                <div class="text__wrapper">
-                    <p class="hero__text"><span>UX |</span> UI designer</p>
-                    <p class="hero__text">24 years old, Minsk</p>
+                <div class="hero__wrapper">
+                    <h1 class="hero__title">Denis Novik</h1>
+                    <div class="text__wrapper">
+                        <p class="hero__text"><span>UX |</span> UI designer</p>
+                        <p class="hero__text">24 years old, Minsk</p>
+                    </div>
+                    <ul class="hero__list">
+                        <li class="hero__item"><a class="hero__link link" href="">RU | </a></li>
+                        <li class="hero__item"><a class="hero__link link" href="">ENG</a></li>
+                    </ul>
                 </div>
-                <ul class="hero__list">
-                    <li class="hero__item"><a class="hero__link link" href="">RU | </a></li>
-                    <li class="hero__item"><a class="hero__link link" href="">ENG</a></li>
-                </ul>
-                <img class="hero__img" src="./image/mobile/hero.jpg" alt="">
+                <picture>
+                    <source srcset="./image/desktop/hero.jpg" media="(min-width: 768px)" />
+                    <source srcset="./image/desktop/hero@2x.jpg 2x" media="(min-width: 768px)" />
+                    <img class="hero__img" src="./image/mobile/hero.jpg" alt="Denis Novik"/>
+                </picture>
             </div>
         </section>
 
@@ -86,10 +72,10 @@
                 <h2 class="skills__title">Skills</h2>
                 <p class="skills__text">I work in such programs as</p>
                 <ul class="skills__list">
-                    <li class="skills__item"><img class="skills__img" src="./image/mobile/skill-1.png" alt=""></li>
-                    <li class="skills__item"><img class="skills__img" src="./image/mobile/skill-2.png" alt=""></li>
-                    <li class="skills__item"><img class="skills__img" src="./image/mobile/skill-3.png" alt=""></li>
-                    <li class="skills__item"><img class="skills__img" src="./image/mobile/skill-4.png" alt=""></li>
+                    <li class="skills__item"><img class="skills__img" src="./image/mobile/skill-1.png" alt="Photoshop"></li>
+                    <li class="skills__item"><img class="skills__img" src="./image/mobile/skill-2.png" alt="Illustrator"></li>
+                    <li class="skills__item"><img class="skills__img" src="./image/mobile/skill-3.png" alt="After Effects"></li>
+                    <li class="skills__item"><img class="skills__img" src="./image/mobile/skill-4.png" alt="Figma"></li>
                 </ul>
             </div>
         </section>
@@ -99,15 +85,24 @@
                 <h2 class="portfolio__title">Portfolio</h2>
                 <ul class="portfolio__list">
                     <li class="portfolio__item">
-                        <img class="portfolio__img" src="./image/mobile/portfolio-1.jpg" alt="">
+                        <picture>
+                            <source srcset="./image/desktop/portfolio-1.jpg" media="(min-width: 768px)" />
+                            <img class="portfolio__img" src="./image/mobile/portfolio-1.jpg" alt="Online fashion store"/>
+                        </picture>
                         <a class="portfolio__link" href="">Online fashion store - Homepage</a>
                     </li>
                     <li class="portfolio__item">
-                        <img class="portfolio__img" src="./image/mobile/portfolio-2.jpg" alt="">
+                        <picture>
+                            <source srcset="./image/desktop/portfolio-2.jpg" media="(min-width: 768px)" />
+                            <img class="portfolio__img" src="./image/mobile/portfolio-2.jpg" alt="Reebok Store"/>
+                        </picture>
                         <a class="portfolio__link" href="">Reebok Store - Concept</a>
                     </li>
                     <li class="portfolio__item">
-                        <img class="portfolio__img" src="./image/mobile/portfolio-3.jpg" alt="">
+                        <picture>
+                            <source srcset="./image/desktop/portfolio-3.jpg" media="(min-width: 768px)" />
+                            <img class="portfolio__img" src="./image/mobile/portfolio-3.jpg" alt="Braun Landing Page"/>
+                        </picture>
                         <a class="portfolio__link" href="">Braun Landing Page - Concept</a>
                     </li>
                 </ul>

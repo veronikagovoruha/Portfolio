@@ -21,6 +21,11 @@
   margin-top: 34px;
 }
 
+.portfolio__link:hover,
+.portfolio__link:focus{
+  color: #828282;
+}
+
 .portfolio__item{
   margin-bottom: 78px;
 }

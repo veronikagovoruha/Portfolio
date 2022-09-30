@@ -76,27 +76,30 @@ address {
 }
 
 .header {
-  position: fixed;
+  position: relative;
   width: 100%;
   top: 0;
   left: 0;
   z-index: 50;
 }
 
-.header:before {
+.header__container::after {
   content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 3;
+  display: block;
+  height: 1px;
+  width: 933.8px;
+  background-color: #828282;
 }
 
 .header__body {
   position: relative;
   display: flex;
-  justify-content: end;
   height: 80px;
+}
+
+.header__menu {
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .header__burger {
@@ -109,9 +112,8 @@ address {
   z-index: 2;
 }
 
-.header__list li {
-  list-style: none;
-  margin-left: 20px;
+.header__item:not(:last-child) {
+  padding-right: 155px;
 }
 
 .header__link {
@@ -121,19 +123,48 @@ address {
   text-decoration: none;
 }
 
+.header__link:hover,
+.header__link:focus {
+  color: #828282;
+}
+
+.lang__wrapper {
+  display: none;
+}
+
 @media (max-width: 767px) {
+  .header {
+    position: fixed;
+  }
+  .header:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 3;
+  }
+  .header__container:after {
+    content: "";
+    display: none;
+  }
   body.lock {
     overflow: hidden;
   }
-  .header__wrapper {
+  .header__container {
     padding-top: 66px;
     padding-left: 26px;
     padding-right: 26px;
+  }
+  .header__list {
+    display: block;
+    padding-bottom: 150px;
   }
   .header__link {
     font-size: 34px;
   }
   .header__body {
+    justify-content: end;
     height: 50px;
   }
   .header__burger {
@@ -187,27 +218,49 @@ address {
   }
   .header__menu {
     position: fixed;
-    top: -100%;
-    left: 0;
+    top: 0;
+    left: -100%;
     width: 100%;
     height: 100%;
     overflow: auto;
     background-color: #ffffff;
     transition: all 0.3s ease 0s;
-    padding: 66px 0 0 26px;
   }
   .header__menu.active {
-    top: 0;
+    left: 0;
+    padding: 66px 0 0 26px;
   }
-  .header__list {
-    display: block;
+  .header__item:not(:last-child) {
+    margin-bottom: 20px;
   }
-  .header__list li {
-    margin: 0 0 20px 0;
+  .header__link:hover,
+.header__link:focus {
+    color: #828282;
+  }
+  .lang__wrapper {
+    display: flex;
+    position: absolute;
+    justify-content: end;
+    transform: rotate(90deg);
+    right: 18px;
+  }
+  .header__lang {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 1.2;
+  }
+  .header__lang:hover,
+.header__lang:focus {
+    color: #828282;
+  }
+  .header__lang:last-child {
+    margin-left: 4px;
   }
 }
 .hero {
   padding-top: 62px;
+  padding-bottom: 84px;
 }
 
 .hero__title {
@@ -231,10 +284,43 @@ address {
   margin-bottom: 36px;
 }
 
+.hero__list {
+  display: none;
+}
+
 .hero__img {
   margin: 0 auto;
 }
 
+@media (min-width: 768px) {
+  .hero {
+    padding-top: 40px;
+    padding-bottom: 105px;
+  }
+  .hero__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+  }
+  .hero__title {
+    margin-bottom: 0;
+  }
+  .hero__list {
+    display: flex;
+    justify-content: end;
+    transform: rotate(90deg);
+  }
+  .hero__item {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.2;
+  }
+  .hero__img {
+    margin: 0;
+  }
+}
 .about {
   background-color: #F6F6F6;
 }
@@ -262,6 +348,11 @@ address {
   margin-bottom: 0;
 }
 
+@media (min-width: 768px) {
+  .about__container {
+    max-width: 485px;
+  }
+}
 .skills__title {
   font-family: Gilroy-Bold, sans-serif;
   font-style: normal;
@@ -289,6 +380,14 @@ address {
   margin: 0 auto;
 }
 
+@media (min-width: 768px) {
+  .skills__list {
+    display: flex;
+  }
+  .skills__item:not(:last-child) {
+    padding-right: 90px;
+  }
+}
 .portfolio {
   background-color: #F6F6F6;
 }
@@ -316,6 +415,11 @@ address {
   color: inherit;
   text-align: center;
   margin-top: 34px;
+}
+
+.portfolio__link:hover,
+.portfolio__link:focus {
+  color: #828282;
 }
 
 .portfolio__item {
@@ -389,6 +493,12 @@ address {
   text-align: center;
   margin: 0 auto;
   color: #828282;
+}
+
+@media (min-width: 768px) {
+  .text_btn {
+    padding: 12px 30px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
